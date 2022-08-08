@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Autonomous Driving</title>
+    
+    <link rel="stylesheet" href="../../common/animate.min.css">
+    <link href="../../common/Comfortaa.css" rel="stylesheet">
+    <script src="../../common/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../common/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<style>
+		html, body
+		{
+			width : 100%;
+			height : 100%;
+			margin : 0px;
+			padding : 0px;
+		}
+
+		canvas
+		{
+			display : block;		
+		}
+
+                
+	</style>
+
+	
+</head>
+    
+    
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="header" class="animated slideInDown" style="animation-delay:0.0s;">
+    
+    <div id="title">Autonomous Driving</div><br>
+    
+    </div>
+
+    <center>
+    <div id="middle">
+
+    </div>
+    </center>
+
+    <div id="portfolio">
+	    <div>
+                 <h1>Description</h1>  
+                 
+		    <p>This agent is trained on a Carla simulated envirnment. 
+		    The agent make decisions base on a video feed from a camera mounted at the frount of the car.
+		    This video feed is first process by an image segmentation neural network. 
+		    The processed video feed is than piped to a CNN trained by deep reinforcement learning to make the steering decisions. 
+		    Both neutal network is trained with Tensorflowand and Keras.
+		    </p>
+		    
+		</div>
+	    <br><br><br><hr><br><br><br>
+	    
+	    
+	    <img src="video.jpg" width=100%>
+	    
+	    
+	    <br><br><br><hr><br><br><br>
+	    
+             <div id="Autonomous_Driving">
+                <h1>Demo video</h1>
+
+
+		<video width=100% autoplay loop controls>
+		<source src="video.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+                        
+
+             </div>
+
+             
+         
+
+    		</div>
+
+
+    <div id="footer">
+	    <font size=5>
+	     <br>Click <a href="..">here</a> to return to the main page<br> 
+	    
+	    </font>
+    </div>
+
+</body>
+
+
+
+
+
+</html>

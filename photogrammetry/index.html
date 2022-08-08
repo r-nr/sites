@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aerial photogrammetry</title>
+    <link rel="stylesheet" href="../common/animate.min.css">
+    <link href="../common/Comfortaa.css" rel="stylesheet">
+    <script src="../common/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<style>
+		html, body
+		{
+			width : 100%;
+			height : 100%;
+			margin : 0px;
+			padding : 0px;
+		}
+
+		canvas
+		{
+			display : block;		
+		}
+
+                
+	</style>
+
+	<script type="text/javascript" src="scr/three.min.js"></script>
+	<script type="text/javascript" src="scr/jsmodeler.js"></script>
+	<script type="text/javascript" src="scr/jsmodeler.ext.three.js"></script>
+	<script type="text/javascript" src="scr/online3dembedder.js"></script>
+	<script type="text/javascript">
+		function OnResize ()
+		{
+
+                        var canvas = document.getElementById ('fullscreen');
+                        canvas.width = document.body.clientWidth*0.8;
+                        canvas.height = document.body.clientHeight*0.7;
+
+		}
+		
+		function OnLoad ()
+		{
+			OnResize ();
+			LoadOnline3DModels ();
+		}
+	
+		window.addEventListener ('load', OnLoad, true);
+		window.addEventListener ('resize', OnResize, true);
+		     
+
+	</script>
+</head>
+    
+    
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <div id="title">Aerial photogrammetry - Future of mapping</div><br>
+    <div id="links">
+        <a href="#Live_3D_model" >Live 3D model</a>
+        <a href="#Screenshots">Screenshots</a>
+        <a href="#Downloads">Downloads</a>
+        <a href="../">Back to Main Page</a>
+    </div>
+    </div>
+
+    <center>
+    <div id="middle">
+        <div id="tagline" class="animated zoomIn" style="animation-delay:0.4s;">
+            It just takes a drone
+        </div>
+    </div>
+    </center>
+
+    <div id="portfolio">
+	    <div id="Live_3D_models">
+                 <h1>Description</h1>  
+		    <p>Making 3D models haven't benn this easy before, who need to make it yourself when you can just grab it from reality. All you need to do is to take some photos with your drone and the computer will do the rest.</p>
+		    
+		</div>
+	    <br><br><br><hr><br><br><br>
+	    
+             <div id="Live_3D_model">
+                 <h1>Live 3D model</h1>   
+
+            <div><canvas id="fullscreen" class="3dviewer" sourcefiles="model/sim/sim_display.mtl|model/sim/sim_display.obj|model/sim/sim_texture.png"  width="200" height="200"></canvas></div>          
+		<div class="project">
+                 <h2>^ This is an interactive 3D model ^</h2>
+                 <div>Left mouse button and pawn to orbit, right mouse button to move, mouse wheel to zoom        <font size=1>(this 3D viewer is still in development and only works 80% of the time)</font>
+		<br><br>
+		The model displayed here don't have the highest qulity, but the high qulity ones can be downaloded at <a href="#Downloads">Downloads</a>
+
+		<br><br><br><br>
+    		Click below to load more<br><br>
+		
+            <div><iframe height="600" style='border:none' width="100%" src="model/bridge/pre.html" ></iframe></div>
+            <br><br><hr><br><br>
+            <div><iframe height="600" style='border:none' width="100%" src="model/building/pre.html" ></iframe></div>
+       	    <br><br><hr><br><br>
+            <div><iframe height="600" style='border:none' width="100%" src="model/rock/pre.html" ></iframe></div>
+       	    <br><br><hr><br><br>
+            <div><iframe height="600" style='border:none' width="100%" src="model/rocks/pre.html" ></iframe></div>
+
+
+		</div>
+                </div>
+                        
+
+             </div>
+         <br><br><br><hr><br><br><br>
+              <div id="Screenshots">
+                 <h1>Screenshots</h1>
+		      <h2>Point clouds</h2>
+                 <img src="imgs/br_pc.png" width=100%>
+                 <br><br><br>
+                 <img src="imgs/bd_pc.png" width=100%>
+                 <br><br><br>
+		      <h2>Contour heat map</h2>
+                 <img src="imgs/heat_map.png" width=100%>
+                 <br><br><br>
+		      <h2>Textured mesh</h2>
+                 <img src="imgs/rocks.png" width=100%>
+                 <br><br><br>
+                 <img src="imgs/rock.png" width=100%>
+
+
+             </div>
+           
+             <br><br><br><hr><br><br><br>
+             <div id="Downloads">
+                 <h1>Downloads</h1>
+
+
+                 <div class="project">
+                 <h2>3D models can be downloaded  <a href="../output/models.zip" target="_blank">here</a></h2>
+               
+               
+                </div>
+
+
+             </div>
+         
+
+    		</div>
+	</div>
+
+    <div id="footer">
+	    <font size=5>
+	     <br>Click <a href="..">here</a> to return to the main page<br> 
+	    
+	    </font>
+    </div>
+
+</body>
+
+
+
+
+
+</html>
