@@ -56,7 +56,7 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(230,230,230,1),rgba(230,230,230,0)),url("./Logistic-curve.jpg") center center fixed;
+    background:linear-gradient(0deg,rgba(230,230,230,1),rgba(230,230,230,0)),url("./media/output.gif") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
